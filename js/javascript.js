@@ -94,7 +94,7 @@ const modalBtn = (phones) => {
     <p class="text-xl text-[#706F6F] mt-3"><span class="font-semibold text-[#403F3F]">Slug:</span>${phones.slug}</p>
     <p class="text-xl text-[#706F6F] mt-3"><span class="font-semibold text-[#403F3F]">Release data:</span>${phones?.releaseDate }</p>
     <p class="text-xl text-[#706F6F] mt-3"><span class="font-semibold text-[#403F3F]">Brand:</span>${phones.brand}</p>
-    <p class="text-xl text-[#706F6F] mt-3"><span class="font-semibold text-[#403F3F]">GPS:</span>${phones?.others?.GPS}</p>
+    <p class="text-xl text-[#706F6F] mt-3"><span class="font-semibold text-[#403F3F]">GPS:</span>${phones?.others?.GPS || 'No GPS avalible'}</p>
 
     `
     console.log(phones.others.GPS);
