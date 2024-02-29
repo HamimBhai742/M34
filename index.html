@@ -23,8 +23,8 @@
 
 <body>
     <section>
-        <div class="mt-5 font-popins">
-            <label class="input input-bordered flex items-center gap-2 w-[752px] mx-auto">
+        <div class="mt-5 font-popins max-sm:px-3">
+            <label class="input input-bordered flex items-center gap-2 lg:w-[752px] mx-auto w-full">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                     class="w-4 h-4 opacity-70">
                     <path fill-rule="evenodd"
@@ -33,7 +33,7 @@
                 </svg>
                 <input id="input-value" type="text" class="grow" placeholder="Search your phone" />
             </label>
-            <button class="btn btn-primary absolute text-white top-5 left-[915px]" onclick="searchBtn()">Search</button>
+            <button class="btn btn-primary absolute text-white top-5 lg:left-[915px] right-0 " onclick="searchBtn()">Search</button>
         </div>
     </section>
 
@@ -53,6 +53,10 @@
                 </div>
         </dialog>
     </section>
+
+    <div id="no-data-container" class="hidden">
+      <p id="no-data-found" class="text-7xl font-popins font-bold text-center flex items-center min-h-screen justify-center"></p>
+    </div>
     <div class="flex justify-center mt-16 hidden" id="loding-btn">
         <span class="loading loading-spinner loading-lg"></span>
     </div>
